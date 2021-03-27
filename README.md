@@ -1,6 +1,3 @@
-# AI_Internship
-This is vietnhh branch, AI intership at BAP software. 
-
 ### Folder tree:
 ```
 |   GetTitle.py
