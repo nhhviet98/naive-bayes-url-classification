@@ -34,8 +34,7 @@
 # Naive Bayes
 
 ```
-cd vietnhh
-cd NaiveBayes
+cd naive-bayes-url-classification
 python NaiveBayes.py
 ```
 # Notebook
