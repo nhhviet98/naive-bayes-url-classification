@@ -41,19 +41,10 @@ cd vietnhh
 cd NaiveBayes
 python NaiveBayes.py
 ```
+# Notebook
+To get more information from this project, please read my notebook at:
 
-# Smoothing
-Ta có công thức:
-
-\begin{equation}
-P(C|X) \propto  P(C)\prod_{i=1}^{d} P(x_{i}|C)
-\end{equation}
-
-Trường hợp $P(x_{i}|C)$ nào đó bằng 0 hay cụ thể trong bài toán này thì một từ nào đó mới của tập test không xuất hiện trong một class nào đó của tập train dẫn đến xác suất bằng 0. Để giải quyết vấn đề này thì người ta thường sử dụng kỹ thuật smoothing ở đây cụ thể là laplace smoothing với hyperparameter là $\alpha$. 
-
-Thường với các bài toàn sử dụng word count thì alpha thường bằng 1. Tuy nhiên ở bài toán này sử dụng tf-idf nên các giá trị trong vector thường bé hơn một vật nên em chọn qua một vài giá trị bé hơn một và khi chọn 0.001 thì thấy độ chính xác tốt nên lựa chọn $\alpha = 0.001$. 
-
-# Results
+https://github.com/nhhviet98/naive-bayes-url-classification/blob/master/NaiveBayes.ipynb
 
 ### Training Set
 
@@ -82,7 +73,7 @@ weighted avg       0.90      0.89      0.88   1250382
 ```
 
 <p align="center">
-<img src="vietnhh/NaiveBayes/results/confusion_matrix_train.png">
+<img src="results/confusion_matrix_train.png">
 </p>
 
 ### Testing Set
@@ -112,5 +103,5 @@ weighted avg       0.58      0.53      0.51    312596
 ```
 
 <p align="center">
-<img src="vietnhh/NaiveBayes/results/confusion_matrix_test.png">
+<img src="results/confusion_matrix_test.png">
 </p>
